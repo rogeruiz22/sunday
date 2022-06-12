@@ -5,10 +5,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+
 public class AppTest {
     @Test
     public void firstTest() throws Exception {
-        WebDriver driver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver","/c/Users/Roger Ruiz/IdeaProjects/sunday/src/main/resources/chromedriver.exe");
+        ChromeDriver driver = new ChromeDriver();
 
         driver.get("https://captive.apple.com/");
 
